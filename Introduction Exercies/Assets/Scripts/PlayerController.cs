@@ -6,11 +6,14 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     //the speed at which the player moves at.
+    //explain how with a public variable you are able to see it in the inspector and not with private.
+    //explain Serializefield ? and explain why it is good practice to keep game balancing variables private.
+    [SerializeField]
     public int speed = 2;
     // Start is called before the first frame update
     void Start()
     {
-        //Point 1 Use to explain the Start method
+        //Point 1 Use to explain the Start method position the player in 1.5,1.5,1.5
         //Pseudo 1. The player position is reset to 0 on all three axis at the start of the game.
         this.transform.position = new Vector3(0, 0, 0);
     }
