@@ -28,6 +28,8 @@ public class PlayerController : MonoBehaviour
         {
             //Point 2 Show the difference between speed with Time and without
             //Pseudo 2. The player moves right on the x axis.(N.B the player moves on the positive values)
+            //Use the same explanation to explain vector 3 as you did for lv 5s
+            //thisobject.access the transform component.Translate Method(Vector3(x = speed * realTime,0,0));
             this.transform.Translate(speed * Time.deltaTime,0,0);
             //Point 6 Point out step by step what the code is doing.(Show link for unity answers https://answers.unity.com/questions/984554/change-color-of-a-gameobject-when-it-collisions-c.html)
             //Pseudo 6 The player colour is changed to blue when it moves to the right.
